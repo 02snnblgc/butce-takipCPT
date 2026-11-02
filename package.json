@@ -1,0 +1,29 @@
+{
+  "name": "butce-takip-android",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Yerel çalışan kişisel gelir-gider ve ödeme takip uygulaması",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "android:add": "npx cap add android",
+    "android:sync": "npm run build && npx cap sync android",
+    "android:open": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.0",
+    "@capacitor/core": "^8.6.0",
+    "@capacitor/local-notifications": "^8.3.1",
+    "@capacitor/filesystem": "^8.1.5",
+    "@capacitor/share": "^8.0.1",
+    "exceljs": "^4.4.0",
+    "pdfmake": "^0.2.20"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.0",
+    "vite": "^7.1.12"
+  }
+}
