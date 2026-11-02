@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Yerel çalışan kişisel gelir-gider ve ödeme takip uygulaması",
-  "engines": { "node": ">=22.12.0" },
+  "engines": {
+    "node": ">=22.12.0"
+  },
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "vite build",
@@ -24,6 +26,7 @@
   },
   "devDependencies": {
     "@capacitor/cli": "^8.6.0",
+    "typescript": "^5.9.3",
     "vite": "^7.1.12"
   }
 }
